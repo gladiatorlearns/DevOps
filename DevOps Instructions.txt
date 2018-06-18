@@ -1,0 +1,64 @@
+GIT -
+Setup gitbash
+Create new repo in github - gladiatorlearns
+create a new repository - DevOps
+Open gitbash - create a folder c/devops/sourcecode
+Copy new repository id from github
+open gitbash -
+create user - git config --global user.name "Gladiator"
+create user email - git config --global user.email "gladiatorlearns@gmail.com"
+
+Download the repo- git clone https://github.com/gladiatorlearns/DevOps.git
+
+DevOps folder gets downloaded.
+
+Create 2 file - Source code 1, source code 2
+
+git checkout master (checks out master branch)
+
+git pull (syncs remote repo with local)
+
+add file and,
+
+git add .  (adds the files modified for repo)
+
+git commit -m "comment"  (commits the files)
+
+git push   (pushes the changes to repo)
+
+create new repo in server - Develop
+
+git checkout Develop
+git pull 
+
+create new file source code file 3 - 
+git add .
+git committ - m "added new files"
+git push 
+
+
+to merge branch - 
+
+git checkout master (main branch)
+git merge Develop  (adds all the files in Develop into Master)
+git push
+
+in case of conflict - 
+
+use vi editor 
+
+<<<<head - tells local checkedout instance
+>>>>Develop5 -- is the one that is being merged.
+
+Add the changes in relevant section and
+
+git add .
+git commit -m "comment"
+git push
+
+JEnkins - 
+
+Installl Jenkins war, run it directly or using apache.
+Create DevOps and DevOps_Sub Job
+Related DevOps Subjob to Devops as post build action
+Go to settings - INstall GIT Hub and Build Pipeline plugins. INstall without restart.
