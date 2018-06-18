@@ -1,3 +1,7 @@
 This is a demo project for GIT - Balakrishna
 
-added new line - bala
+<<<<<<< HEAD
+
+=======
+Added new line -Rohan
+>>>>>>> Develop5
