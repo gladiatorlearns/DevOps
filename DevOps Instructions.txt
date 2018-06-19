@@ -1,4 +1,44 @@
 GIT -
+
+Basic commands - 
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+
+Exercise - 
 Setup gitbash
 Create new repo in github - gladiatorlearns
 create a new repository - DevOps
@@ -62,3 +102,23 @@ Installl Jenkins war, run it directly or using apache.
 Create DevOps and DevOps_Sub Job
 Related DevOps Subjob to Devops as post build action
 Go to settings - INstall GIT Hub and Build Pipeline plugins. INstall without restart.
+
+
+Docker - 
+
+1)	Open online docker playground available at http://labs.play-with-docker.com/ Make sure docker engine is installed in playground VM by executing the command docker version
+2)	Make sure no java software is installed in VM by executing java or javac
+3)	Now go to github public repository https://github.com/sachidananda04/javahelloworld and have a look into folder and files(src folder, dockerfile)
+4)	Explain about the dockerfile instructions used in the dockerfile.
+5)	Go to docker hub/store public image sachidananda04/javahelloworld and go to Dockerfile tab and have a look on the content of sample image.
+6)	Execute the commands docker images, docker ps, docker ps -a to make sure no image and containers are available/running on your VM.
+7)	Now on your playground VM, execute “docker run –name myjavaprog sachidananda04/javahelloworld” and watch out for the output mentioned in HelloWorld.java inside src folder in github.
+8)	This example shows how a pre-built image can be used without bothering much about inner details like H/W, OS, software, etc
+
+
+AWS - 
+
+Create S3 with lower letter name, version disabled, Create tags for easy searching, enryption no.
+Create ECS - create key pair, give a unique name, pem file gets downloaded
+Download putty
+
