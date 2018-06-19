@@ -118,7 +118,23 @@ Docker -
 
 AWS - 
 
-Create S3 with lower letter name, version disabled, Create tags for easy searching, enryption no.
-Create ECS - create key pair, give a unique name, pem file gets downloaded
-Download putty
+Create S3 with lower letter name, version disabled, Create tags for easy searching, enryption no. create folder
+Create ECS - 
+create key pair, give a unique name, pem file gets downloaded
+create vpc (under networking and content), start vpc wizard, single public subnet, enter unique name for vpc name, subnet name.
+create security group under vpc - name the security group, map the vpc
+go to ec2 - network group/filter the security group, edit action - edit inbound rules - add http, https, ssh all tcp for myip (one that i am using)
+Launch EC2 instance with AMI - linux AMI, instance type t2 medium general purpose, no of instances 1, selecct vpc, auto assign enable, add storage 8gb, add tags for identification
+map security group, review, map the key value pair created earlier, launch 
+[AMI details - The Amazon Linux AMI is an EBS-backed, AWS-supported image. The default image includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.]
+
+
+
+Download puttygen- https://www.ssh.com/ssh/putty/download#sec-Download-PuTTY-installation-package-for-Windows
+load the pem file which was downloaded from AWS while creating vpc
+save the public and private key (ppk)
+if changing the network from wifi to lan or, go to EC2 network security group, edit rules, change again myip, save.
+open putty gen, upload the pem file, generate private key, give pass phrase as pass,  save as .ppk
+open putty, under ssh auth give the ppk reference, go to session, put the domain name available (ec2/connect tab)
+login, use ec2-user, use the pass phrase given while generating the private key.
 
